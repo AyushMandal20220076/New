@@ -84,24 +84,24 @@ class _ProductLstState extends State<ProductLst> {
                             order1 = "Accepted";
                           });
                           },
-                              icon: Icon(Icons.add_box_rounded),
+                              icon: Icon(Icons.check),
                           color: Colors.white,),
                           IconButton(onPressed: () {
                             setState(() {
                               order1 = "Rejected";
                             });
                           },
-                            icon: Icon(Icons.add),
+                            icon: Icon(Icons.close),
                             color: Colors.white,)
                         ],),
 
 
                         Row(children: [
-                          Icon(Icons.account_balance_wallet_outlined,
+                          Icon(Icons.currency_rupee_sharp,
                             color: Colors.grey,
                           ),
                           SizedBox(width: 5,),
-                          Text("Rs $BsPrice1",
+                          Text("$BsPrice1",
                             style: TextStyle(
                               color: Colors.white,
                               fontFamily: 'Nerko',
@@ -110,7 +110,7 @@ class _ProductLstState extends State<ProductLst> {
                           ),
                           IconButton(onPressed: () {
                             Navigator.pushNamed(context, '/detail');
-                          }, icon: Icon(Icons.account_tree_outlined,
+                          }, icon: Icon(Icons.details_rounded,
                           color: Colors.white,))
                         ],),
 
@@ -135,9 +135,14 @@ class _ProductLstState extends State<ProductLst> {
                           TextButton(
                               onPressed: () {
                                 setState(() {
-                                  count1 -=1;
-                                  BsPrice1 = BsPrice1-699;
-                                });
+                                  if (count1>1) {
+                                      count1 -= 1;
+                                      BsPrice1 = BsPrice1 - 699;
+                                    }
+                                  else{
+                                    count1 = 1;
+                                  }
+                                  });
                               } ,
                               child: Text("⊝",
                                 style: TextStyle(
@@ -184,20 +189,20 @@ class _ProductLstState extends State<ProductLst> {
                               order2 = "Accepted";
                             });
                           },
-                            icon: Icon(Icons.add_box_rounded),
+                            icon: Icon(Icons.check),
                             color: Colors.white,),
                           IconButton(onPressed: () {
                             setState(() {
                               order2 = "Rejected";
                             });
                           },
-                            icon: Icon(Icons.add),
+                            icon: Icon(Icons.close),
                             color: Colors.white,)
                         ],),
 
 
                         Row(children: [
-                          Icon(Icons.account_balance_wallet_outlined,
+                          Icon(Icons.currency_rupee_sharp,
                             color: Colors.grey,
                           ),
                           SizedBox(width: 5,),
@@ -232,8 +237,13 @@ class _ProductLstState extends State<ProductLst> {
                           TextButton(
                               onPressed: () {
                                 setState(() {
-                                  count2 -=1;
-                                  BsPrice2 = BsPrice2-1050;
+                                  if (count2>1) {
+                                    count2 -= 1;
+                                    BsPrice2 = BsPrice2 - 1050;
+                                  }
+                                  else{
+                                    count2 = 1;
+                                  }
                                 });
                               } ,
                               child: Text("⊝",
@@ -280,20 +290,20 @@ class _ProductLstState extends State<ProductLst> {
                               order3 = "Accepted";
                             });
                           },
-                            icon: Icon(Icons.add_box_rounded),
+                            icon: Icon(Icons.check),
                             color: Colors.white,),
                           IconButton(onPressed: () {
                             setState(() {
                               order3 = "Rejected";
                             });
                           },
-                            icon: Icon(Icons.add),
+                            icon: Icon(Icons.close),
                             color: Colors.white,)
                         ],),
 
 
                         Row(children: [
-                          Icon(Icons.account_balance_wallet_outlined,
+                          Icon(Icons.currency_rupee_sharp,
                             color: Colors.grey,
                           ),
                           SizedBox(width: 5,),
@@ -327,10 +337,15 @@ class _ProductLstState extends State<ProductLst> {
                           TextButton(
                               onPressed: () {
                                 setState(() {
-                                  count3 -=1;
-                                  BsPrice3 = BsPrice3-83199;
-                                });
-                              } ,
+                                  if (count3>1) {
+                                      count3 -= 1;
+                                      BsPrice3 = BsPrice3 - 83199;
+                                    }
+                                  else{
+                                    count3 = 1;
+                                  }
+                                  });},
+
                               child: Text("⊝",
                                 style: TextStyle(
                                     color: Colors.white,
@@ -374,20 +389,20 @@ class _ProductLstState extends State<ProductLst> {
                               order4 = "Accepted";
                             });
                           },
-                            icon: Icon(Icons.add_box_rounded),
+                            icon: Icon(Icons.check),
                             color: Colors.white,),
                           IconButton(onPressed: () {
                             setState(() {
                               order4 = "Rejected";
                             });
                           },
-                            icon: Icon(Icons.add),
+                            icon: Icon(Icons.close),
                             color: Colors.white,)
                         ],),
 
 
                         Row(children: [
-                          Icon(Icons.account_balance_wallet_outlined,
+                          Icon(Icons.currency_rupee_sharp,
                             color: Colors.grey,
                           ),
                           SizedBox(width: 5,),
@@ -421,8 +436,13 @@ class _ProductLstState extends State<ProductLst> {
                           TextButton(
                               onPressed: () {
                                 setState(() {
-                                  count4 -=1;
-                                  BsPrice4 = BsPrice4-7899;
+                                  if (count4>1) {
+                                    count4 -= 1;
+                                    BsPrice4 = BsPrice4 - 7899;
+                                  }
+                                  else{
+                                    count4 = 1;
+                                  }
                                 });
                               } ,
                               child: Text("⊝",
@@ -468,24 +488,24 @@ class _ProductLstState extends State<ProductLst> {
                               order5 = "Accepted";
                             });
                           },
-                            icon: Icon(Icons.add_box_rounded),
+                            icon: Icon(Icons.check),
                             color: Colors.white,),
                           IconButton(onPressed: () {
                             setState(() {
                               order5 = "Rejected";
                             });
                           },
-                            icon: Icon(Icons.add),
+                            icon: Icon(Icons.close),
                             color: Colors.white,)
                         ],),
 
 
                         Row(children: [
-                          Icon(Icons.account_balance_wallet_outlined,
+                          Icon(Icons.currency_rupee_sharp,
                             color: Colors.grey,
                           ),
                           SizedBox(width: 5,),
-                          Text("Rs $BsPrice3",
+                          Text("Rs $BsPrice5",
                             style: TextStyle(
                               color: Colors.white,
                               fontFamily: 'Nerko',
@@ -498,7 +518,7 @@ class _ProductLstState extends State<ProductLst> {
                           IconButton(onPressed: () {
                             setState(() {
                               count5 += 1;
-                              BsPrice5 = BsPrice5+83199;
+                              BsPrice5 = BsPrice5+112860;
                             });
                           },
                             icon: Icon(Icons.add_circle_outline),
@@ -515,8 +535,13 @@ class _ProductLstState extends State<ProductLst> {
                           TextButton(
                               onPressed: () {
                                 setState(() {
-                                  count5 -=1;
-                                  BsPrice5 = BsPrice5-83199;
+                                  if (count5>1) {
+                                    count5 -= 1;
+                                    BsPrice5 = BsPrice5 - 112860;
+                                  }
+                                  else{
+                                    count5 = 1;
+                                  }
                                 });
                               } ,
                               child: Text("⊝",
@@ -527,7 +552,7 @@ class _ProductLstState extends State<ProductLst> {
                           ),
                         ],)
                       ],),
-                    Image.asset('images/PS4.jpeg',scale: 1.56,),
+                    Image.asset('images/card.jpg',scale: 4,),
                   ],),
               ),
             ],),
@@ -536,4 +561,3 @@ class _ProductLstState extends State<ProductLst> {
     );
   }
 }
-

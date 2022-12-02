@@ -3,11 +3,12 @@ import 'package:sutt_project/Pages/Details.dart';
 import 'pages/Home.dart';
 
 
-void main() {runApp(MaterialApp(
-  initialRoute: '/home',
-  routes: {
-    '/home' :(Context) => ProductLst(),
-    '/detail' :(Context) => const Descrip(),
-},
-),);
+void main() {
+  runApp(MaterialApp(
+    initialRoute: '/home',
+    routes: {
+      '/home': (Context) => ProductLst(),
+      '/detail': (Context) => const Descrip(),
+    },
+  ),);
 }
